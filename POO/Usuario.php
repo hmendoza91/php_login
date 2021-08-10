@@ -5,18 +5,8 @@ class Usuario{
     private $id;
     public $email;
     public $password;
-
      
-
-    public function __construct()
-    {
-        $this->id=$id;
-        $this->email=$email;
-        $this->password=$password;
-        session_start();
-
-    }
-    public function validar($email,$password)
+       public function validar($email,$password)
     { 
         if($email === "a@a.co" && $password === "1234"){
             $_SESSION["email"]=$this->email;
